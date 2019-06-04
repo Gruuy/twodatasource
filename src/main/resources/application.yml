@@ -1,0 +1,26 @@
+#mybatis打印sql 测试用
+logging:
+  level:
+    cn.gzrrg.dao : debug
+
+#mybatis
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml
+
+
+spring:
+  datasource:
+    #DataSource1
+    test1:
+      jdbc-url: jdbc:mysql://localhost:3306/test?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+      username: root
+      password: 123456
+      driver: com.mysql.jdbc.Driver
+    #DataSource2
+    test2:
+      jdbc-url: jdbc:mysql://localhost:3306/test2?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+      username: root
+      password: 123456
+      driver: com.mysql.jdbc.Driver
+
+
